@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&family=Rubik+Moonrocks&display=swap');
+
+body {
+    font-family: Rubik Bubbles;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.divisorbase {
+
+    background-color: rgb(255, 202, 88);
+    color: blueviolet;
+    width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    margin-top: 80px;
+    border-radius: 15px;
+
+}
