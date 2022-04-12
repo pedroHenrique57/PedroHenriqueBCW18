@@ -11,7 +11,12 @@
 </head>
 
 <body>
-    <header>
+    <div class="header">
+        <img src="./img/logo-dark.png" alt="Logo da SoulCode" srcset="Imagem do Logo">
+        <h1>Bootcamp de Java Spring com Angular Web</h1>
+        <p>Turma de desenvolvimento Web Full Stack da SoulCode Academy</p>
+    </div>
+    <header class="topnav">
         <ul>
             <li><a href="#cadastro">Cadastro</a></li>
             <li><a href="#trajetoria">Trajetoria</a></li>
@@ -20,55 +25,44 @@
         </ul>
     </header>
     <main>
-        <div class="divisorbase" id="trajetoria">
-            <!-- trajetoria -->
-            <table>
-                <tr>
-                    <!--Titulo-->
-                    <th> <strong>Fase</strong></th>
-                    <th> <strong> Descrição</strong></th>
-                </tr>
-                <tr>
-                    <!-- primeira fase-->
-                    <td>Primeira</td>
-                    <td>
+        <div class="row" id="trajetoria">
+            <div class="column">
+                <h1>Primeira Fase</h1>
+                <div class="gallery">
+                    <a target="_blank" href="./img/img3.jpg">
+                        <img src="./img/img3.jpg" alt="Fase 1">
+                    </a>
+                    <div class="desc">
                         inscrição no site oficial, execução do teste de lógica,
                         curso da trilha zero e montagem do pitch.
-                    </td>
-                    <td>
-                        <figure>
-                            <img src="./img/img1.jpg" alt="altos da inscriçãona soulcode" height="250" width="250">
-                        </figure>
-                    </td>
-                </tr>
-                <tr>
-                    <!-- segunda fase-->
-                    <td>Segunda</td>
-                    <td>Testes trilha zero e entrevista com recrutador para avaliação de bolsa,
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <h1>Segunda fase Fase</h1>
+                <div class="gallery">
+                    <a target="_blank" href="./img/img2.jpg">
+                        <img src="./img/img2.jpg" alt="Fase 1">
+                    </a>
+                    <div class="desc">
+                        Testes trilha zero e entrevista com recrutador para avaliação de bolsa,
                         nesta fase se analisa a elegibilidade para a bolsa de estudos
                         perante os clientes e o candidado.
-                    </td>
-                    <td>
-                        <figure>
-                            <img src="./img/img2.jpg" alt="entrevista para recrutamento" height="250" width="250">
-                        </figure>
-                    </td>
-                </tr>
-                <tr>
-                    <!-- terceira fase -->
-                    <td>Terceira</td>
-                    <td>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <h1>Terceira Fase</h1>
+                <div class="gallery">
+                    <a target="_blank" href="./img/img1.jpg">
+                        <img src="./img/img1.jpg" alt="Fase 1">
+                    </a>
+                    <div class="desc">
                         Dinâmica em grupo com a realização de teste on-line e
                         convocação dos alunos aprovados
-                    </td>
-                    <td>
-                        <figure>
-                            <img src="./img/img3.jpg" alt="Dinamica em grupo com a realização de um teste on-line"
-                                height="250" width="250">
-                        </figure>
-                    </td>
-                </tr>
-            </table>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="divisorbase" id="cadastro">
             <!--  cadastro -->
