@@ -64,53 +64,103 @@
                 </div>
             </div>
         </div>
-        <div class="divisorbase" id="cadastro">
+        <div class="row" id="dicas">
+            <div class="leftColumn">
+                <div class="card">
+                    <h2>MERCADO DE TECNOLOGIA</h2>
+                    <h5>Profissional desejado, Abril 13, 2022</h5>
+                    <div class="img" style="height: 200px; background-image: url(.img/1);">
+                        <p>O que é desejado no mercado?</p>
+                        <p>De acordo com a ultima pesquisa de emopregabilidade do IPCA, o profissional de segurança digital e de 
+                            soluções para métricas de dados são os mais procurados no mercado atual. No fim de 2021 com a chegada das 
+                            vacinas uma pesquisa encomendada pela revista Exame mostra que profissionais de dados e segurança são os mais
+                            procurados na recuperação pós pandemia.
+                            </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="formContainer" id="cadastro">
             <!--  cadastro -->
             <form action="#" method="">
-                <div>
-                    <label for="fname" name="name">Nome:</label>
-                    <input type="text" id="fname" name="name" placeholder="Entre com o seu nome"> <br> <br>
+                <div class="formRow">
+                    <div class="col-20">
+                        <label for="fname" name="name">Nome:</label>
+                    </div>
+                    <div class="col-70">
+                        <input type="text" id="fname" name="name" placeholder="Entre com o seu nome"> <br> <br>
+                    </div>
                 </div>
-                <div>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" placeholder="exemplo@exemplo.com">
+                <div class="formRow">
+                    <div class="col-20">
+                        <label for="email">Email:</label>
+                    </div>
+                    <div class="col-70">
+                        <input type="email" id="email" placeholder="exemplo@exemplo.com">
+                    </div>
                 </div>
-                <div>
-                    <label for="birthday">Data de nascimento</label>
-                    <input type="date" id="birthday">
+                <div class="formRow">
+                    <div class="col-20">
+                        <label for="birthday">Data de nascimento</label>
+                    </div>
+                    <div class="col-70">
+                        <input type="date" id="birthday">
+                    </div>
                 </div>
-                <div>
-                    <label for="defic">Deficiência:</label>
-                    <input type="checkbox" id="defic">
+                <div class="formRow">
+                    <div class="col-20">
+                        <label for="defic">Deficiência:</label>
+                    </div>
+                    <div class="col-70">
+                        <input type="checkbox" id="defic">
+                    </div>
                 </div>
-                <div>
-                    <label for="password">Senha:</label>
-                    <input type="password" id="password" placeholder="Entre com a senha" maxlength="14">
+                <div class="formRow">
+                    <div class="col-20">
+                        <label for="password">Senha:</label>
+                    </div>
+                    <div class="col-70">
+                        <input type="password" id="password" placeholder="Entre com a senha" maxlength="14">
+                    </div>
                 </div>
-                <div>
-                    <label for="schooltier">Escolaridade:</label> <br>
-                    <input type="radio" name="school" id="schooltier" value="F1"> Fundamental <br>
-                    <input type="radio" name="school" id="schooltier" value="M1"> Médio <br>
-                    <input type="radio" name="school" id="schooltier" value="B1"> Bacharel <br>
-                    <input type="radio" name="school" id="schooltier" value="T1"> Tecnólogo <br>
-                    <input type="radio" name="school" id="schooltier" value="L1"> Licenciado <br>
-                    <input type="radio" name="school" id="schooltier" value="P1"> Pós graduado <br>
-                    <input type="radio" name="school" id="schooltier" value="M1"> Mestrado <br>
-                    <input type="radio" name="school" id="schooltier" value="D1"> Doutorado <br>
+                <div class="formRow">
+                    <div class="col-20">
+                        <label for="schooltier">Escolaridade:</label> <br>
+                    </div>
+                    <div class="col-70">
+                        <input type="radio" name="school" id="schooltier" value="F1"> Fundamental <br>
+                        <input type="radio" name="school" id="schooltier" value="M1"> Médio <br>
+                        <input type="radio" name="school" id="schooltier" value="B1"> Bacharel <br>
+                        <input type="radio" name="school" id="schooltier" value="T1"> Tecnólogo <br>
+                        <input type="radio" name="school" id="schooltier" value="L1"> Licenciado <br>
+                        <input type="radio" name="school" id="schooltier" value="P1"> Pós graduado <br>
+                        <input type="radio" name="school" id="schooltier" value="M1"> Mestrado <br>
+                        <input type="radio" name="school" id="schooltier" value="D1"> Doutorado <br>
+                    </div>
                 </div>
-                <div>
-                    <label for="experience">Qual foi sua experiência com programação:</label>
-                    <input type="range" id="experience">
+                <div class="formRow">
+                    <div class="col-20">
+                        <label for="experience">Qual foi sua experiência com programação:</label>
+                    </div>
+                    <div class="col-70">
+                        <input type="range" id="experience">
+                    </div>
                 </div>
-                <div>
-                    <label for="description">Descrição:</label> <br>
-                    <textarea id="description" cols="30" rows="10"
-                        placeholder="Descreva as tecnologias que conhecidas"></textarea>
+                <div class="formRow">
+                    <div class="col-20">
+                        <label for="description">Descrição:</label> <br>
+                    </div>
+                    <div class="col-70">
+                        <textarea id="description" cols="30" rows="10"
+                            placeholder="Descreva as tecnologias que conhecidas"></textarea>
+                    </div>
                 </div>
-                <div>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Limpar">
-                </div>
+                <div class="formRow">
+                    <div class="col-70">
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpar">
+                    </div>
             </form>
         </div>
     </main>

@@ -61,16 +61,16 @@ body {
     }
 }
 
-div.gallery{
+div.gallery {
     margin-left: auto;
     margin-right: auto;
 }
 
-div.gallery:hover{
+div.gallery:hover {
     border: 1px solid #333;
 }
 
-div.gallery img{
+div.gallery img {
     width: 100%;
     height: auto;
 }
@@ -78,4 +78,81 @@ div.gallery img{
 div.desc {
     padding: 15px;
     text-align: center;
+}
+
+input[ type=text],
+select,
+textarea,
+input[ type=date],
+input[ type=password],
+input[ type=email],
+input[ type=range] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[ type=submit],
+input[ type=reset] {
+    margin: 10px;
+    background-color: #390b82;
+    color: azure;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+}
+
+input[ type=submit]:hover,
+input[ type=reset]:hover {
+    background-color: #5365c8;
+    transition: 0.5s;
+}
+
+.formContainer {
+    margin: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+}
+
+.col-20 {
+    float: left;
+    width: 20%;
+    margin-top: 6px;
+    text-align: right;
+}
+
+.col-70 {
+    float: left;
+    width: 70%;
+    margin-top: 6px;
+}
+
+.formRow:after {
+    content: "";
+    display: table;
+    clear: both;
+    justify-items: flex-start;
+
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #7601fc;
+    margin-top: 20px;
+    color: azure;
+    font-weight: bold;
 }
