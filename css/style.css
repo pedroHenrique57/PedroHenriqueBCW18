@@ -1,4 +1,4 @@
-body{
+body {
     font-family: Roboto;
     margin: 0;
     padding: 0;
@@ -9,57 +9,61 @@ body{
     box-sizing: border-box;
 }
 
-.header{
-    background-color: #7681fc;
+.header {
+    background-color: #4708f3;
     padding: 20px;
     text-align: center;
     color: azure;
     font-weight: bold;
 }
 
-.topnav{
+.topnav {
     overflow: hidden;
-    background-color: rgb(245, 251, 79);
+    background-color: #f2ff39;
 }
 
-.topnav a{
+.topnav a {
     float: left;
     display: block;
-    color: #5223c0;
-    padding: 14px 16px;
+    color: white;
+    padding: 20px 160px;
     text-decoration: none;
+    transition: 0.5s
 }
 
 .topnav a:hover {
-    background-color: rgb(250, 250, 56);
-    color: rgb(27, 10, 100);
+    background-color: #c0d123;
+    color: azure;
 }
 
-.topnav ul{
+.topnav ul {
     list-style-type: none;
 }
 
-.column {
+.colum {
     float: left;
     width: 33.33%;
     padding: 15px;
+    background-color: #4708f3;
 }
 
-div.gallery{
+div.gallery {
     margin-left: auto;
     margin-right: auto;
 }
 
-div.gallery:hover{
-    border: 1px solid #777;
+div.gallery:hover {
+    border: 1px solid rgb(0, 0, 0);
+    background-color: #4b18d8;
+    transition: 0.5s;
 }
 
-div.gallery img{
+div.gallery img {
     width: 100%;
     height: auto;
 }
 
-div.desc{
+div.desc {
     padding: 15px;
     text-align: center;
 }
@@ -67,40 +71,41 @@ div.desc{
 input[type=text],
 select,
 textarea,
-input[type=date],
 input[type=password],
 input[type=email],
-input[type=range]{
+input[type=range] {
     width: 100%;
-    padding: 12px;
+    padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    resize: vertical; 
+    border-radius: 10px;
+    resize: vertical;
 }
-label{
-    padding: 12px 12px 12px 0;
+
+label {
+    padding: 12px 12px 12px 0px;
     display: inline-block;
 }
 
 input[type=submit],
-input[type=reset]{
-    background-color: #390b82;
+input[type=reset] {
+    background-color: #4708f3;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     float: right;
-    margin: 10px;
+    margin-right: 10px;
+    margin-bottom: 25px;
 }
 
 input[type=submit]:hover,
-input[type=reset]:hover{
-    background-color: #5365c8;
-    transition: 0.9s;
+input[type=reset]:hover {
+    background-color: #794ef0;
+    transition: 0.5s;
 }
 
-.formContainer{
+.formContainer {
     margin: 50px;
     margin-left: auto;
     margin-right: auto;
@@ -108,6 +113,7 @@ input[type=reset]:hover{
     border-radius: 5px;
     background-color: white;
     padding: 20px;
+
 }
 
 .col-20 {
@@ -123,75 +129,104 @@ input[type=reset]:hover{
     margin-top: 6px;
 }
 
-.formRow:after{
+.formRow::after {
     content: "";
     display: table;
     clear: both;
     justify-items: flex-start;
 }
 
-.leftColumn{
+.leftColum {
     float: left;
     width: 75%;
 }
 
-.rightColumn{
+.rightColum {
     float: left;
     width: 25%;
-    background-color: aliceblue;
+    background-color: #4708f3;
     padding-left: 20px;
+    text-align: center;
 }
 
-.img{
+.img {
     background-color: #ccc;
     width: 100%;
     padding: 20px;
     background-size: cover;
 }
 
-.card{
+.card {
     background-color: white;
     padding: 20px;
     margin-top: 20px;
 }
 
-.row{
+.row {
     content: "";
     display: table;
     clear: both;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+
 }
 
-.row:after{
+.row::after {
     content: "";
     display: table;
     clear: both;
 }
 
+
 .footer {
     padding: 20px;
     text-align: center;
-    background-color: #7681fc;
+    background-color: #4708f3;
     margin-top: 20px;
-    color: azure;
+    color: white;
     font-weight: bold;
 }
 
+.footerSocial {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.footerSocial > div {
+    width: 50px;
+    margin: 5px;
+    text-align: center;
+}
+
+.footerSocial > div > img {
+    width: 60px;
+}
+
+.footerSocial > div > img:hover {
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+
+.footerSocial > div > p {
+    font-size: 14px;
+}
+
 @media screen and (max-width: 400px) {
-    .leftColumn,
-    .rightColumn{
+    .leftColum,
+    .rightColum{
         width: 100%;
         padding: 0;
     }
     .topnav a{
         float: none;
         width: 100%;
-    }    
+    }
 }
 
-@media screen and (max-width: 600px){
+
+@media screen and (max-width: 600px) {
     .col-20,
     .col-70,
     input[type=submit],
@@ -199,15 +234,15 @@ input[type=reset]:hover{
         width: 100%;
         margin-top: 0;
     }
-    .column{
+    .colum {
         width: 100%;
     }
 }
 
 @media screen and (max-width: 800px) {
-    .leftColumn,
-    .rightColumn{
+    .leftColum,
+    .rightColum{
         width: 100%;
         padding: 0;
-    }    
+    }
 }
